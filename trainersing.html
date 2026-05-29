@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trainer Registration</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #1b1d1e, #3e559b, #e6e3e5);
+        }
+
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: "Arial Black", sans-serif;
+            letter-spacing: 2px;
+        }
+
+        table {
+            width: 100%;
+            border-spacing: 15px;
+        }
+
+        td {
+            vertical-align: middle;
+            font-size: 16px;
+        }
+
+        .label {
+            width: 35%;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select {
+            width: 70%;
+            padding: 8px 15px;
+            border-radius: 20px;
+            border: 1px solid #333;
+            outline: none;
+        }
+
+        textarea {
+            width: 70%;
+            height: 80px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #333;
+            resize: none;
+        }
+
+        .gender input {
+            margin-left: 20px;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        button {
+            width: 120px;
+            padding: 10px;
+            margin: 0 20px;
+            border: none;
+            border-radius: 25px;
+            background-color: #5cb85c;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>TRAINER REGISTRATION</h1>
+
+    <form>
+        <table>
+            <tr>
+                <td class="label">Name :-</td>
+                <td><input type="text" placeholder="Username"></td>
+            </tr>
+
+            <tr>
+                <td class="label">Email :-</td>
+                <td><input type="email" placeholder="Email"></td>
+            </tr>
+
+            <tr>
+                <td class="label">Date :-</td>
+                <td><input type="date"></td>
+            </tr>
+
+            <tr>
+                <td class="label">Qualification :-</td>
+                <td>
+                    <select>
+                        <option>10th</option>
+                        <option>12th</option>
+                        <option>Graduate</option>
+                        <option>Post Graduate</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="label">Gender :-</td>
+                <td class="gender">
+                    <input type="radio" name="gender"> Male
+                    <input type="radio" name="gender"> Female
+                </td>
+            </tr>
+
+            <tr>
+                <td class="label">Current Designation :-</td>
+                <td><input type="text" placeholder="Designation"></td>
+            </tr>
+
+            <tr>
+                <td class="label">Work Experience :-</td>
+                <td><textarea placeholder="Enter work experience..."></textarea></td>
+            </tr>
+
+            <tr>
+                <td class="label">Username :-</td>
+                <td><input type="text" placeholder="Username"></td>
+            </tr>
+
+            <tr>
+                <td class="label">Password :-</td>
+                <td><input type="password" placeholder="Password"></td>
+            </tr>
+        </table>
+
+        <div class="buttons">
+            <button type="submit"><a href="treaner.html">Save</a></button>
+           <button type="reset"><a href="index.html">Cancel</a></button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

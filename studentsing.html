@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Times New Roman", serif;
+            height: 100vh;
+            background: linear-gradient(to right, #1b1d1e, #3e559b, #e6e3e5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 700px;
+            padding: 30px 40px;
+            background: linear-gradient(to right, #cacad3, #323839);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+        }
+
+        table {
+            width: 100%;
+            border-spacing: 15px;
+        }
+
+        td {
+            font-size: 18px;
+        }
+
+        input, select {
+            width: 260px;
+            padding: 8px 15px;
+            border-radius: 20px;
+            border: 2px solid #444;
+            outline: none;
+            font-size: 16px;
+        }
+
+        input[type="radio"] {
+            width: auto;
+            margin-left: 15px;
+        }
+
+        .buttons {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        button {
+            width: 120px;
+            padding: 10px;
+            border: none;
+            border-radius: 25px;
+            background: #5cb85c;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 0 20px;
+        }
+
+        button.cancel {
+            background: #5cb85c;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>STUDENT REGISTRATION</h1>
+
+    <form>
+        <table>
+            <tr>
+                <td>USERNAME :-</td>
+                <td><input type="text" placeholder="Username"></td>
+            </tr>
+
+            <tr>
+                <td>EMAIL :-</td>
+                <td><input type="email" placeholder="Email"></td>
+            </tr>
+
+            <tr>
+                <td>DATE :-</td>
+                <td><input type="date"></td>
+            </tr>
+
+            <tr>
+                <td>COURSE :-</td>
+                <td>
+                    <select>
+                        <option>C Programming</option>
+                        <option>Java</option>
+                        <option>Python</option>
+                        <option>Web Development</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>QUALIFICATION :-</td>
+                <td>
+                    <select>
+                        <option>10th</option>
+                        <option>12th</option>
+                        <option>Diploma</option>
+                        <option>Graduate</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>GENDER :-</td>
+                <td>
+                    <input type="radio" name="gender"> MALE
+                    <input type="radio" name="gender"> FEMALE
+                </td>
+            </tr>
+
+            <tr>
+                <td>USERNAME :-</td>
+                <td><input type="text" placeholder="Username"></td>
+            </tr>
+
+            <tr>
+                <td>PASSWORD :-</td>
+                <td><input type="password" placeholder="Password"></td>
+            </tr>
+        </table>
+
+        <div class="buttons">
+            <button type="submit"><a href="studentlog.html">Save</a></button>
+            <button type="reset" class="cancel"> <a href="index.html"> Cancel</a></button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

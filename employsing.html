@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Employee Registration</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #1b1d1e, #3e559b, #e6e3e5);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 650px;
+        padding: 30px;
+        border-radius: 10px;
+        background: linear-gradient(to right, #cacad3, #323839 );
+        box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 25px;
+        letter-spacing: 1px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    td {
+        padding: 8px;
+        vertical-align: middle;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    input[type="password"],
+    select,
+    textarea {
+        width: 95%;
+        padding: 8px 12px;
+        border-radius: 20px;
+        border: 1px solid #444;
+        outline: none;
+    }
+
+    textarea {
+        border-radius: 10px;
+        resize: none;
+    }
+
+    .gender {
+        font-weight: bold;
+    }
+
+    .buttons {
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        padding: 8px 30px;
+        border-radius: 20px;
+        border: none;
+        background: #4CAF50;
+        color: white;
+        font-size: 14px;
+        cursor: pointer;
+        margin: 0 10px;
+    }
+
+    input[type="reset"] {
+        background: #5cb85c;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>EMPLOYEE REGISTRATION</h2>
+
+    <form>
+        <table>
+            <tr>
+                <td><label>NAME :-</label></td>
+                <td><input type="text" placeholder="Username"></td>
+            </tr>
+
+            <tr>
+                <td><label>EMAIL :-</label></td>
+                <td><input type="email" placeholder="Email"></td>
+            </tr>
+
+            <tr>
+                <td><label>DATE :-</label></td>
+                <td><input type="date"></td>
+            </tr>
+
+            <tr>
+                <td><label>GENDER :-</label></td>
+                <td class="gender">
+                    <input type="radio" name="gender"> MALE
+                    &nbsp;&nbsp;
+                    <input type="radio" name="gender"> FEMALE
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>QUALIFICATION :-</label></td>
+                <td>
+                    <select>
+                        <option>10th</option>
+                        <option>12th</option>
+                        <option>Graduate</option>
+                        <option>Post Graduate</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>CURRENT DESIGNATION :-</label></td>
+                <td><input type="text" placeholder="Designation"></td>
+            </tr>
+
+            <tr>
+                <td><label>WORK EXPERIENCE :-</label></td>
+                <td>
+                    <textarea rows="4" placeholder="Enter Work Experience....."></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>SALARY :-</label></td>
+                <td><input type="text" placeholder="Salary"></td>
+            </tr>
+
+            <tr>
+                <td><label>DATE OF JOINING :-</label></td>
+                <td><input type="date"></td>
+            </tr>
+
+            <tr>
+                <td><label>USERNAME :-</label></td>
+                <td><input type="text" placeholder="Username"></td>
+            </tr>
+
+            <tr>
+                <td><label>PASSWORD :-</label></td>
+                <td><input type="password" placeholder="Password"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                 <div class="buttons">
+            <button type="submit"><a href="treaner.html">Save</a></button>
+           <button type="reset"><a href="index.html">Cancel</a></button>
+        </div>
+  <input type="submit" value="Save">
+                   <input type="reset" value="Cancel">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+</body>
+</html>

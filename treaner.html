@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trainer Login</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to right, #1b1d1e, #3e559b, #e6e3e5 );
+            font-family: Arial, sans-serif;
+        }
+
+        .login-box {
+            width: 900px;
+            padding: 40px;
+            border: 2px solid #777;
+            background: linear-gradient(to right, #cacad3, #323839);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 55px;
+            margin-bottom: 40px;
+            font-family: "Algerian", serif;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            margin: 40px 0;
+        }
+
+        .row label {
+            width: 230px;
+            font-size: 30px;
+            font-family: "Algerian", serif;
+        }
+
+        .row input {
+            width: 360px;
+            padding: 15px 25px;
+            font-size: 18px;
+            border-radius: 30px;
+            border: 2px solid #333;
+            outline: none;
+            box-shadow: inset 2px 2px 5px rgba(0,0,0,0.4);
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+            margin-top: 50px;
+        }
+
+        .buttons button {
+            width: 170px;
+            padding: 15px;
+            font-size: 22px;
+            border-radius: 30px;
+            border: none;
+            cursor: pointer;
+            background-color: #4caf50;
+            color: white;
+            box-shadow: 2px 4px 8px rgba(0,0,0,0.4);
+        }
+
+        .buttons button:hover {
+            opacity: 0.85;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-box">
+        <h1>TRAINER LOG IN</h1>
+
+        <form>
+            <div class="row">
+                <label>NAME :-</label>
+                <input type="text" placeholder="Enter Your Name">
+            </div>
+
+            <div class="row">
+                <label>PASSWORD :-</label>
+                <input type="password" placeholder="Password">
+            </div>
+
+            <div class="buttons">
+                <button type="submit"><a href="treanerdasbord.html">Login</a></button>
+                <button type="reset"><a href="index.html">Cancle</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Login</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #1b1d1e, #3e559b, #e6e3e5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-container {
+            width: 700px;
+            padding: 40px;
+            background: linear-gradient(to right, #cacad3, #323839);
+            border-radius: 12px;
+            box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            text-align: center;
+            font-family: "Times New Roman", serif;
+            font-size: 40px;
+            margin-bottom: 50px;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .row label {
+            width: 200px;
+            font-size: 26px;
+        }
+
+        .row input {
+            width: 350px;
+            padding: 14px 20px;
+            font-size: 18px;
+            border-radius: 25px;
+            border: none;
+            outline: none;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 40px;
+        }
+
+        button {
+            width: 150px;
+            padding: 12px;
+            font-size: 18px;
+            border-radius: 30px;
+            border: none;
+            cursor: pointer;
+            background-color: #5cb85c;
+            color: white;
+        }
+
+        button:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form id="employForm">
+
+        <div class="login-container">
+
+            <h1>EMPLOYEE LOG IN</h1>
+
+            <div class="row">
+                <label>NAME :-</label>
+                <input type="text" id="name" placeholder="Enter Your Name" required>
+            </div>
+
+            <div class="row">
+                <label>PASSWORD :-</label>
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+
+            <div class="buttons">
+                <button type="submit">Login</button>
+                <button type="reset">Cancel</button>
+            </div>
+
+        </div>
+
+    </form>
+    
+<sript>
+<a href="employjs.js"></a>
+</sript>
+</body>
+</html>
